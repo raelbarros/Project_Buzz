@@ -69,6 +69,7 @@ database:
 Foram criadas duas DAGS:
 1.	DAG_BQ_TO_PSQL_FIRST_MOVE: responsável pelo “first move” para popular a tabela com dados históricos;
 2.	DAG_BQ_TO_PSQL: responsável pelo move D-1 que será executado diariamente.
+
 Para a construção das DAGs foi criado duas classes de conexão, uma para o BigQuery e outra para o Postgre (handlers), essas classes são chamadas a partir de um PythonOperator como função para fazer as devidas manipulações de dados.
 
 ### Validações

@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Airflow
+logs/
+database/data/
+
 # C extensions
 *.so
 

@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "desafio-stone-342719",
-  "private_key_id": "4cc9d9714c99c9c8c8c4de0d3faf8b44cea3de20",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC7rtZof1gba017\nbYklAgDsIoCrQMCVS+yDEF2aasLaXOJhXnMmBHJ6gkj+EWIx18ogeRgQXOFNSRmc\ns493VMh9wgZnmoNMi6fV6grzUKLPkuyQzti77KRSa3+3PneVRg6cBw+dHyYO+0VF\nGVhPRqh0e96CuH1tRDCDCCpWTssXZj4Su9fzcOkwtkpVZszRi8PY7hODfBCAQw2g\nxSypHD1lsd7WaPlqvUemrAg0nNuyzMNqbK2lrcDJHzIiv8QszB0GMspeecDnTkL+\nPjlAuhgfqK+74GVLEH7+tB2R9WKnugCzO/Q+LrUwel3noEKFsvEz+P8mqHq129c8\nHN+hMUovAgMBAAECggEAVlDD6d47Kq0QPuYy7zK7Mt5xV5FZoLAAz4wsyFI2WA/k\ny0wRYBgmgCJAKJzdELhCDOo0P34/3ffzEAbiwcpbxL6BjI9auE74OuC+9YUNw7I6\nGyUON2tPbVpkK+XOQHguSuLScvv62GQGSQ+tdhQ0cBHx1SO9B44XU4PjWLs3GwSQ\ngc5S+PmXIT1aFiiqyOjr48e7CBzvyXpNB7I7yF6DU+AOS50ZNdB/qLfU+cw9X0gG\nNjECuZwuiXOLtaOux6WVycAWuJ4PjVjrasHB5NSqtYagX603YTZF+h/hWkLIDwm1\npSgpfnhanjXYtSQD15zpytaZbDvz0Z8NKqZT+mmv1QKBgQDdQa4OcvIjDV+cHEZo\nj8kdh1JyCIsnuid6PF4/jLZdesKY+jHBQCp840b5ZKJIW5r2VlNHjCyUV1bDAHeT\nHfYQhCAiDZimZTgShx9UCR9eVKAoij8fiXWA3yjEJPhPNagmYoF83sX0f1b+h5lM\ngvptPq1xyndGmiiC1npQlOhkswKBgQDZJ4c2fjFjZ/mkxQ0r0zXyeGSJ95e9k4yQ\nwUXI17MWgbnZ6ggH3CV52PoZ4wycNBVDRvlFzUaVdSiO/d3mVC/pRiOfpGtl/tLB\nuY9euJQZtqMvEQBPhkOQCgOulLdOo4IpWVjDfrwWIvXqboPrFjpxMrIqNBqK06ev\n0v1UDLmalQKBgEDgrnocKHYwyLVM8TRd3RokgP9hE/TNOCA2rWgzCZJ1mbQjwQ0q\nlIrUVg5w/Mj8236aJ4dWSgghaBZ7/5QK+Ak1xPpXREiea4e7SWtp1WHirKfWidXk\nh6kHRrvlH06SrEC9J70G0cL0x/yQpFn0GhyIgXFZbgosz+41l94jG9XTAoGAPAbV\nNZcEh/oB5C4kSe0EiJYHFKxAYcMbpBgI9k/JzXrmqPosZh/QrDHyUJ2Wqscq6YIA\n/e6UiFPudjhu0nCLHeyphEOq/HLIR4zHuONE7SazTRth/pmaq4JZKjUpxq8kF9H+\n22t5CpV3bOpHxQBL/2aIIWptu9puDAhCxq0N0VECgYA517pwzJCbcg/h9wD8wj4i\na8fd4dcy0JfOtUHN7mDgrEr7+nJNmgo1Hxv6c914/QbJ7rLbs976YaWyaDLFf13A\nwTAAAiyuaJ++NiF6IsGLtrLk+l60aodjlGDL3m/u4hQX3mGRq/T64tdad5MmbS2X\nQ5jI+vWISHBKTl8EDOPqnA==\n-----END PRIVATE KEY-----\n",
-  "client_email": "bigquery@desafio-stone-342719.iam.gserviceaccount.com",
-  "client_id": "107158413131323398918",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquery%40desafio-stone-342719.iam.gserviceaccount.com"
-}
+#KEY_GCP

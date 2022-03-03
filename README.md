@@ -77,14 +77,3 @@ Para a construção das DAGs foram criadas duas classes de conexão, uma para o 
 A carga de first move foi realizado um select dos últimos 15-1 dias, para validação da carga pegamos o MAX(block_timestamp) do BigQuery e conferimos o valor do registro com o que foi inserido no db.
 ##### Carga Periódica:
 A carga periódica é realizada com o parâmetro de CURRENT_TIMESTAMP–1
-
-
-#### Documentações:
-https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas
-https://docs.sqlalchemy.org/en/14/core/engines.html
-https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#dialect-postgresql
-https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
-
-A fim de deixar registrado a minha tentativa de criação do cluster de k8s, foi utilizado as seguintes documentações:
-https://airflow.apache.org/docs/helm-chart/stable/index.html
-https://www.astronomer.io/events/recaps/official-airflow-helm-chart/

@@ -85,6 +85,6 @@ https://docs.sqlalchemy.org/en/14/core/engines.html
 https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#dialect-postgresql
 https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
 
-Afim de deixar registrado a minha tentativa de criação do cluster de k8s, foi utilizado as seguintes documentações:
+A fim de deixar registrado a minha tentativa de criação do cluster de k8s, foi utilizado as seguintes documentações:
 https://airflow.apache.org/docs/helm-chart/stable/index.html
 https://www.astronomer.io/events/recaps/official-airflow-helm-chart/

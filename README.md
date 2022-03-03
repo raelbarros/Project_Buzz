@@ -41,7 +41,7 @@ Executar o docker-compose
 ```
 
 ### Construção
-Devido à falta de recurso na minha maquina local, não foi possível a realização da primeira atividade tentei utilizar o kind para deploy de um cluster de k8s, porém não tive sucesso devido a quantidade de memoria RAM da minha máquina pessoa.
+Devido à falta de recurso na minha maquina local, não foi possível a realização da primeira atividade tentei utilizar o kind para deploy de um cluster de k8s, porém não tive sucesso devido a quantidade de memoria RAM da minha máquina pessoal.
 Como alternativa foi utilizado um cluster do Airflow em cima apenas do Docker utilizando o docker-compose.
 Para a criação do ambiente, foi utilizado uma imagem customizada com base o airflow:2.2.4,
 Dentro do arquivo docker-compose.yaml foi acrescentado o serviço do Postgre relacionado a tarefa 2
@@ -70,11 +70,11 @@ Foram criadas duas DAGS:
 1.	DAG_BQ_TO_PSQL_FIRST_MOVE: responsável pelo “first move” para popular a tabela com dados históricos;
 2.	DAG_BQ_TO_PSQL: responsável pelo move D-1 que será executado diariamente.
 
-Para a construção das DAGs foi criado duas classes de conexão, uma para o BigQuery e outra para o Postgre (handlers), essas classes são chamadas a partir de um PythonOperator como função para fazer as devidas manipulações de dados.
+Para a construção das DAGs foram criadas duas classes de conexão, uma para o BigQuery e outra para o Postgre (handlers), essas classes são chamadas a partir de um PythonOperator como função para fazer as devidas manipulações de dados.
 
 ### Validações
 ##### First_move:
-A carga de first move vou realizado um select dos últimos 15-1 dias, para validação da carga pegamos o MAX(block_timestamp) do BigQuery e conferimos o valor do registro com o que foi inserido no db.
+A carga de first move foi realizado um select dos últimos 15-1 dias, para validação da carga pegamos o MAX(block_timestamp) do BigQuery e conferimos o valor do registro com o que foi inserido no db.
 ##### Carga Periódica:
 A carga periódica é realizada com o um parâmetro de CURRENT_TIMESTAMP–1, com isso podemos verificar o registro em ambas bases novamente:
 

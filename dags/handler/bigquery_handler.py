@@ -5,7 +5,7 @@ from google.oauth2 import service_account
 
 GCP_SCOPE = ["https://www.googleapis.com/auth/cloud-platform"]
 
-class BigQueryHandle(object):
+class BigQueryHandler:
     
     # --- LOGIN
     def __init__(self, key_path):
@@ -35,7 +35,7 @@ class BigQueryHandle(object):
 
 if __name__ == '__main__':
     #Teste Zone
-    bq_handle = BigQueryHandle(r'C:\Users\israe\Desktop\desafio-stone\dags\configs\gcp_creds.json')
+    bq_handle = BigQueryHandler(r'C:\Users\israe\Desktop\desafio-stone\dags\configs\gcp_creds.json')
 
     data = bq_handle.get_data(query="""
     SELECT 

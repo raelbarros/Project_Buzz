@@ -4,18 +4,18 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.dummy import DummyOperator
 from datetime import timedelta, datetime
+import pendulum
 
 # Imports Handlers
-from handler.bigquery_handler import BigQueryHandle
+from handler.bigquery_handler import BigQueryHandler
 from handler.postgre_handler import PostgreHandler
 
-import pendulum
 
 # Variavel de timezone
 local_tz = pendulum.timezone("America/Sao_Paulo")
 
 default_args = {
-    "onwer": "Israel Barros - <israel.silva.barros@hotmail.com>",
+    'owner': "Israel Barros - <israel.silva.barros@hotmail.com>",
     'start_date': datetime(2022, 1, 1, tzinfo=local_tz),
     'retries': 1,
     'concurrency': 1,
@@ -43,12 +43,13 @@ QUERY_BQ = """
         BETWEEN DATE_SUB(CURRENT_TIMESTAMP(), INTERVAL 15 DAY) AND DATE_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 DAY)
     """
 
+# Variavel Table PSQL
 TABLE_PSQL = 'raw_tokens'
 
 # Funcao de move dos dados entre BQ e PSQL
 def move_bq_to_pqsl():
     # Inicializacao dos handles
-    bq_handle = BigQueryHandle('/opt/airflow/dags/configs/gcp_creds.json')
+    bq_handle = BigQueryHandler('/opt/airflow/dags/configs/gcp_creds.json')
     psql_handler = PostgreHandler(psql_creds='/opt/airflow/dags/configs/psql_creds.json') 
 
     # SELECT dados do BQ

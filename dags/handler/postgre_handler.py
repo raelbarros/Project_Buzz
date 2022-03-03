@@ -56,9 +56,9 @@ if __name__ == "__main__":
     # logger.success("End of Execution")
 
     # ---- FIRST MOVE
-    # from bigquery_handler import BigQueryHandle
+    # from bigquery_handler import BigQueryHandler
 
-    # bq_handle = BigQueryHandle(r'C:\Users\israe\Desktop\desafio-stone\dags\configs\gcp_creds.json')
+    # bq_handle = BigQueryHandler(r'C:\Users\israe\Desktop\desafio-stone\dags\configs\gcp_creds.json')
     # psql = PostgreHandler(psql_creds=r'C:\Users\israe\Desktop\desafio-stone\dags\configs\psql_creds.json')
 
     # data = bq_handle.get_data(query="""

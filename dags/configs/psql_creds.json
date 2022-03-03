@@ -1,0 +1,6 @@
+{
+    "host": "database",
+    "user": "root",
+    "password": "secret",
+    "port": "5432"
+}

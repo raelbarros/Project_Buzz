@@ -11,7 +11,7 @@
 
 :warning: Será feito uma explicação de como foi feito as tasks mais adiante;
 
-#### Estrutura de pastas
+### Estrutura de pastas
 ```
     .
     ├── dags                      # Dag do Airflow
@@ -28,7 +28,7 @@
     └── README.md
 ```
 
-#### Instalação
+### Instalação
 Ter em uma chave de autenticação na GCP para acesso ao Bigquery, a chave utilizada nesse projeto foi excluída por medida de segurança. A chave deve ser armazenada na pasta dags/configs/gcp_creds.json (caso salve com um nome diferente alterar o apontamento nos arquivos de DAG)
 
 Criar uma imagem customizada do Airflow 
@@ -40,7 +40,7 @@ Executar o docker-compose
  $ docker-compose up -d
 ```
 
-#### Construção
+### Construção
 Devido à falta de recurso na minha maquina local, não foi possível a realização da primeira atividade tentei utilizar o kind para deploy de um cluster de k8s, porém não tive sucesso devido a quantidade de memoria RAM da minha máquina pessoa.
 Como alternativa foi utilizado um cluster do Airflow em cima apenas do Docker utilizando o docker-compose.
 Para a criação do ambiente, foi utilizado uma imagem customizada com base o airflow:2.2.4,

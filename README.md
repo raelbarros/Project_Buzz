@@ -76,7 +76,7 @@ Para a construção das DAGs foram criadas duas classes de conexão, uma para o 
 ##### First_move:
 A carga de first move foi realizado um select dos últimos 15-1 dias, para validação da carga pegamos o MAX(block_timestamp) do BigQuery e conferimos o valor do registro com o que foi inserido no db.
 ##### Carga Periódica:
-A carga periódica é realizada com o parâmetro de CURRENT_TIMESTAMP–1, com isso podemos verificar o registro em ambas bases novamente:
+A carga periódica é realizada com o parâmetro de CURRENT_TIMESTAMP–1
 
 
 #### Documentações:

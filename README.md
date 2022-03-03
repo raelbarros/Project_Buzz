@@ -42,7 +42,7 @@ Executar o docker-compose
 
 #### Construção
 Devido à falta de recurso na minha maquina local, não foi possível a realização da primeira atividade tentei utilizar o kind para deploy de um cluster de k8s, porém não tive sucesso devido a quantidade de memoria RAM da minha máquina pessoa.
-Como alternativa para não perder a tarefa foi utilizado um cluster do Airflow em cima apenas do Docker utilizando o docker-compose.
+Como alternativa foi utilizado um cluster do Airflow em cima apenas do Docker utilizando o docker-compose.
 Para a criação do ambiente, foi utilizado uma imagem customizada com base o airflow:2.2.4,
 Dentro do arquivo docker-compose.yaml foi acrescentado o serviço do Postgre relacionado a tarefa 2
 
